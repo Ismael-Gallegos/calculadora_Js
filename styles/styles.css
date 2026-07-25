@@ -1,0 +1,83 @@
+/*========================
+Estilos generales para la aplicación
+========================= */
+body¨{
+    font-family: Arial, sans-serif;    /* Tipografia */
+    background-color: #deb8b8b5;     /* Findo */
+    padding: 25px;                   /* Espaciado gral. */
+    text-align: center;               /* Contenido centrado */
+}
+
+/*========================
+Contenedor principal de la calculadora
+========================= */
+#calculadora {   
+    background-color: #f2f2f2;       /* Color de fondo */
+    padding: 20px;                   /* Espaciado interno */
+    border-radius: 10px;              /* Bordes redondeados */
+    display: inline-block;             /* Para que se ajuste al contenido */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/*========================
+Patalla principal de la calculadora
+========================= */
+#pantalla {
+    width: 100%;                      /* Ancho completo */   
+    padding: 15px;                    /* Espaciado interno */
+    font-size: 20px;                  /* Tamaño de fuente */
+    margin-bottom: 15px;              /* Separación de los botones */
+    border: 2px solid #333;           /* Borde */
+    border-radius: 5px;               /* Bordes redondeados */
+    text-align: right;                /* Texto alineado a la derecha */
+    background-color: white;            /* Fondo blanco */
+}
+
+/*========================
+Contenedor de botones
+========================= */
+.botones {
+    display: grid;                    /* Usamos grid para organizar los botones */
+    grid-template-columns: repeat(4, 70px); /* 4 columnas de 70px */
+    gap: 10px;                        /* Espacio entre botones */
+}
+
+/*========================
+Estilos generales de los botones
+========================= */
+.btn {
+    padding: 15px;                    /* Espaciado interno */
+    font-size: 18px;                  /* Tamaño de fuente */
+    border: 1px solid #333;        /* Borde oscuro */
+    border-radius: 5px;               /* Bordes redondeados */
+    background-color: white;            /* Color de fondo */
+    cursor: pointer;                  /* Cursor tipo puntero */
+}   
+
+/* Efecto hover para los botones */
+.btn:hover {
+    background-color: #dcdcdc;        /* Color de fondo al pasar el mouse */
+}
+
+/*========================
+Botones de operadores
+========================= */
+.operador {
+    background-color: #e1ac0d;        /* Color de fondo amarillo */
+}
+
+/*========================
+Botón de resultado
+========================= */
+#resultado{
+    background-color: #07890b;        /* Color de fondo verde */
+    color: rgb(228, 206, 206);                     /* Color de texto blanco */
+}
+
+/*========================
+Botón de limpiar
+========================= */
+#limpiar{
+    background-color: #b51604;        /* Color de fondo rojo */
+    color: white;                     /* Color de texto blanco */
+}
