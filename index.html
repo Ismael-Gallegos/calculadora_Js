@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Calculadora adaptable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña del navegador -->
+    <title>Calculadora básica</title>
+
+    <!-- Conexión al archivo CSS externo -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Encabezado principal-->
+     <h1>Calculadora básica</h1>
+
+     <!--Contenedor para la calculadora-->
+     <div id="calculadora">
+
+        <!--Pantalla de números y resultados-->
+        <input type="text" id="pantalla" disabled>
+
+        <!--Contenedor para los botones-->
+        <div class="botones">
+            <!--Fila 1-->
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operador">/</button>
+
+            <!--Fila 2-->
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operador">*</button>
+
+            <!--Fila 3-->
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operador">-</button>
+
+            <!--Fila 4-->
+            <button class="btn">0</button>            
+            <button class="btn operador">+</button>
+
+            <!--Btn resultado-->                    
+            <button class="btn" id="resultado">=</button>
+
+             <!--Btn zerocear pantalla-->                    
+            <button class="btn" id="limpiar">C</button>
+        </div>
+     </div>
+
+     <!--Conexión a JavaScript-->
+     <script src="js/app.js"></script>
+</body>
+</html>
