@@ -33,10 +33,10 @@ botones.forEach(boton => {
 
         /* Si es el botón de igual (=) */
         else if (valor === "=") {
-            if (nuemroAnterior !== "" && operador !== "" && operacionActual !== "") {
+            if (nuemroAnterior !== "" && operacionActual !== "") {
                 const num1 = parseFloat(numeroAnterior);
                 const num2 = parseFloat(operacionActual);
-                let resultado;
+                let resultado = 0;
 
                 switch (operador) {
                     case "+": resultado = num1 + num2; break;
