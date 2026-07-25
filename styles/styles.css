@@ -23,7 +23,7 @@ Contenedor principal de la calculadora
 Patalla principal de la calculadora
 ========================= */
 #pantalla {
-    width: 100%;                      /* Ancho completo */   
+    width: 95%;                      /* Ancho completo */   
     padding: 15px;                    /* Espaciado interno */
     font-size: 20px;                  /* Tamaño de fuente */
     margin-bottom: 15px;              /* Separación de los botones */
