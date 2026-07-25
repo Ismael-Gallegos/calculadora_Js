@@ -3,7 +3,7 @@ Elementos del DOM
 ========================= */
 
 const pantalla = document.getElementById("pantalla");
-const botones = document.querySelectorAll ("btn");    
+const botones = document.querySelectorAll (".btn");    
 
 /*Variables para almacenar la operación */
 let numeroAnterior = "";
@@ -19,7 +19,7 @@ botones.forEach(boton => {
         const valor = boton.textContent;
 
         /* Si el boton es un número */
-        if (!isNan(valor)) {
+        if (!isNaN(valor)) {
             operacionActual += valor;
             pantalla.value = operacionActual;
         }
@@ -33,7 +33,7 @@ botones.forEach(boton => {
 
         /* Si es el botón de igual (=) */
         else if (valor === "=") {
-            if (nuemroAnterior !== "" && operacionActual !== "") {
+            if (numeroAnterior !== "" && operacionActual !== "") {
                 const num1 = parseFloat(numeroAnterior);
                 const num2 = parseFloat(operacionActual);
                 let resultado = 0;
